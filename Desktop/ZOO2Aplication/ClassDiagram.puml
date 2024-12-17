@@ -1,0 +1,14 @@
+@startuml
+abstract class com.mycompany.zoo2aplication.zoo.Animal
+abstract class com.mycompany.zoo2aplication.zoo.Bird
+abstract class com.mycompany.zoo2aplication.zoo.Reptile
+class com.mycompany.zoo2aplication.zoo.Crocodile
+class com.mycompany.zoo2aplication.zoo.Eagle
+enum com.mycompany.zoo2aplication.zoo.AnimalType
+interface com.mycompany.zoo2aplication.zoo.SwimmingBehavior
+com.mycompany.zoo2aplication.zoo.Bird --|> com.mycompany.zoo2aplication.zoo.Animal
+com.mycompany.zoo2aplication.zoo.Reptile --|> com.mycompany.zoo2aplication.zoo.Animal
+com.mycompany.zoo2aplication.zoo.Reptile --|> com.mycompany.zoo2aplication.zoo.SwimmingBehavior
+com.mycompany.zoo2aplication.zoo.Crocodile --|> com.mycompany.zoo2aplication.zoo.Reptile
+com.mycompany.zoo2aplication.zoo.Eagle --|> com.mycompany.zoo2aplication.zoo.Bird
+@enduml
